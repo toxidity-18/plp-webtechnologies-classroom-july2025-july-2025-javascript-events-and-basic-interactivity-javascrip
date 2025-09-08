@@ -1,0 +1,152 @@
+/* General body styling for good readability and spacing */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f7f8;
+  color: #333;
+  margin: 0;
+  padding: 40px 20px;
+  line-height: 1.6;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  background: white;
+}
+
+/* Dark mode styles */
+.dark-mode {
+  background-color: #181a1b;
+  color: #e1e1e1;
+  box-shadow: none;
+  border-radius: 8px;
+}
+
+/* Headings with subtle color and spacing */
+h1, h2, h3 {
+  color: #222;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.dark-mode h1, .dark-mode h2, .dark-mode h3 {
+  color: #ccc;
+}
+
+/* Style buttons with consistent padding, border-radius, and smooth transitions */
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin: 5px 8px 8px 0;
+  box-shadow: 0 2px 5px rgba(0,123,255,0.4);
+}
+
+button:hover {
+  background-color: #0056b3;
+  box-shadow: 0 4px 12px rgba(0,86,179,0.7);
+}
+
+.dark-mode button {
+  background-color: #3399ff;
+  box-shadow: 0 2px 5px rgba(51,153,255,0.5);
+}
+
+.dark-mode button:hover {
+  background-color: #1a73e8;
+  box-shadow: 0 4px 12px rgba(26,115,232,0.8);
+}
+
+/* Form styling */
+form {
+  padding: 15px 0;
+}
+
+label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #555;
+}
+
+.dark-mode label {
+  color: #bbb;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px 12px;
+  font-size: 1rem;
+  margin-bottom: 10px;
+  border: 1.8px solid #ddd;
+  border-radius: 6px;
+  transition: border-color 0.3s ease;
+  box-sizing: border-box;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
+}
+
+.dark-mode input[type="text"],
+.dark-mode input[type="password"] {
+  background-color: #282c30;
+  border-color: #444;
+  color: #eee;
+}
+
+.dark-mode input[type="text"]:focus,
+.dark-mode input[type="password"]:focus {
+  border-color: #3399ff;
+  box-shadow: 0 0 8px rgba(51, 153, 255, 0.7);
+}
+
+/* Error message styling */
+.error {
+  color: #d9534f;
+  font-size: 0.9rem;
+  margin-top: -6px;
+  margin-bottom: 12px;
+  font-style: italic;
+}
+
+/* Success message styling */
+#formSuccess {
+  font-weight: 600;
+  margin-top: 8px;
+  font-size: 1.1rem;
+}
+
+/* Section spacing */
+section {
+  margin-bottom: 40px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.dark-mode section {
+  border-color: #444;
+}
+
+/* Counter display styling */
+#counterValue {
+  display: inline-block;
+  min-width: 35px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: #222;
+}
+
+.dark-mode #counterValue {
+  color: #ddd;
+}

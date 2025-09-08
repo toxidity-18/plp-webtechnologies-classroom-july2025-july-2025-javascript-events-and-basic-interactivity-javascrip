@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Interactive Web Page</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Interactive Web Page Example</h1>
+
+  <!-- Part 1: Event Handling - Show message on button click -->
+  <section>
+    <h2>Event Handling</h2>
+    <button id="showMessageBtn">Click me to see a message!</button>
+    <p id="message" style="display:none; color: green;">Hello! You clicked the button.</p>
+  </section>
+
+  <!-- Part 2: Interactive Features -->
+  <section>
+    <h2>Interactive Elements</h2>
+    <!-- Light/Dark mode toggle -->
+    <button id="toggleThemeBtn">Toggle Light/Dark Mode</button>
+
+    <!-- Simple counter -->
+    <div>
+      <h3>Counter</h3>
+      <button id="decreaseBtn">-</button>
+      <span id="counterValue">0</span>
+      <button id="increaseBtn">+</button>
+    </div>
+  </section>
+
+  <!-- Part 3: Form Validation -->
+  <section>
+    <h2>Form Validation</h2>
+    <form id="myForm" novalidate>
+      <div>
+        <label for="name">Name:</label>
+        <input type="text" id="name" />
+        <small class="error" id="nameError"></small>
+      </div>
+
+      <div>
+        <label for="email">Email:</label>
+        <input type="text" id="email" />
+        <small class="error" id="emailError"></small>
+      </div>
+
+      <div>
+        <label for="password">Password:</label>
+        <input type="password" id="password" />
+        <small class="error" id="passwordError"></small>
+      </div>
+
+      <button type="submit">Submit</button>
+      <p id="formSuccess" style="color: green; display:none;">Form submitted successfully!</p>
+    </form>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
